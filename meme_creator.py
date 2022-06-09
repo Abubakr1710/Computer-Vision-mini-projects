@@ -1,7 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
 img=cv2.imread('img/minion.jpg')
-m = cv2.putText(img,'SPACE and COMMA when I forgot them 500 line of code', (95,15), cv2.FONT_HERSHEY_COMPLEX,0.5, (255,255,255))
+
+m = cv2.putText(img,'SPACE and COMMA when I forgot them 500 line of code', (95,15), cv2.FONT_HERSHEY_COMPLEX,0.7, (255,255,255))
 path='img/meme.png'
 cv2.imwrite(path,m)
 meme = cv2.imread('img/meme.png')
