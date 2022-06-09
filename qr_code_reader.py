@@ -1,11 +1,11 @@
 import cv2
 import matplotlib.pyplot as plt
-from torch import qr
 
-d = cv2.imread('img/qrcode.png')
-plt.imshow(d)
-plt.show()
-code_reader=cv2.QRCodeDetector()
-data, points, _ = code_reader.detectAndDecode(d)
-if points is not None:
+qr_code = cv2.imread('img/qrcode.png')
+print(type(qr_code))
+decoder=cv2.QRCodeDetector()
+data, point, _ = decoder.detectAndDecode(qr_code)
+if point is not None:
     print('Link is:',data)
+plt.imshow(qr_code)
+plt.show()
