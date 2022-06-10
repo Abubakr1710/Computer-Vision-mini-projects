@@ -24,11 +24,10 @@ If you did not install this packages,  please install it first
 ******************************
 ## Project 4. Background changer
 ******************************
-![Background](img\whitescreen.png)
+![Background](img/whitescreen.png)
 ******************************
 ## Project 5. Handwritten digit classifier
 ******************************
-![Digit](img\Digit.png)
-******************************
-
+![Digit](img/Digit.png)
+******************************/
 
