@@ -29,5 +29,5 @@ If you did not install this packages,  please install it first
 ## Project 5. Handwritten digit classifier
 ******************************
 ![Digit](img/Digit.png)
-******************************/
+******************************
 
