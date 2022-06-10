@@ -4,13 +4,14 @@ This repository contains mini projects of Computer Vision classes in Epicode(Str
 ## Needed packages:
 If you did not install this packages,  please install it first
 
+* <a href="https://anaconda.org/anaconda/numpy">numpy</a>
 * <a href="https://anaconda.org/conda-forge/matplotlib">matplotlib</a>
 * <a href="https://anaconda.org/pytorch/pytorch">Pytorch</a>
 * <a href="https://anaconda.org/pytorch/torchvision">TorchVision</a>
 * <a href="https://pypi.org/project/opencv-python/">opencv-python</a>
 
 
-## Project 1. Image anotation
+## Project 1. Image annotation
 ******************************
 ![annotated](img/annotated.png)
 ******************************
@@ -29,5 +30,6 @@ If you did not install this packages,  please install it first
 ## Project 5. Handwritten digit classifier
 ******************************
 ![Digit](img/Digit.png)
+
 ******************************
 
