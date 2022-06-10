@@ -96,7 +96,7 @@ def predict(pth):
     plt.tight_layout()
     plt.show()
 
-predict('img/2.jpg')
+
 # parser = argparse.ArgumentParser(description='DIGIT CLASSIFIER ')
 # parser.add_argument('data', type=str, help='Input path of the image')
 # args = parser.parse_args()

@@ -64,6 +64,7 @@ def predict(pth):
     for c in clean_contours:
         x,y,w,h = cv2.boundingRect(c)
         rect = cv2.rectangle(rgb_img, (x,y), (x+w, y+h), (0,255,0), 2)
+        print(c)
         
     
     plt.imshow(rect)
