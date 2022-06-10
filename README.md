@@ -12,7 +12,7 @@ If you did not install this packages,  please install it first
 
 ## Project 1. Image anotation
 ******************************
-![image description](annotated.png)
+![annotated](img/annotated.png)
 ******************************
 ## Project 2. Meme Generator
 ******************************
@@ -20,6 +20,6 @@ If you did not install this packages,  please install it first
 ******************************
 ## Project 3. QR Code Reader
 ******************************
-<img src="" width="128"/>
+![QR COde Reader](img/rect_qr.png)
 ******************************
 

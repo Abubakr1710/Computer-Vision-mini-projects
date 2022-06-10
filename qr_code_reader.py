@@ -1,3 +1,4 @@
+from fileinput import filename
 import cv2
 from cv2 import threshold
 import matplotlib.pyplot as plt
@@ -18,6 +19,8 @@ sorted_counters=sorted(contours, key=cv2.contourArea,reverse=True)
 copy_img=img.copy()
 x,y,w,h = cv2.boundingRect(sorted_counters[0])
 rect=cv2.rectangle(copy_img, (x,y), (x+w,y+h), (0,255,0), 2)
+fname='img/rect_qr.png'
+cv2.imwrite(fname, rect)
 plt.figure(figsize=(20,15))
 plt.imshow(rect)
 plt.show()

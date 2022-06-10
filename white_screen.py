@@ -14,7 +14,7 @@ def screen(img_path, background_path, size):
     res=cv2.bitwise_and(new_img, new_img, mask=mask)
     f=new_img-res
     f=np.where(f==0, nbg, f)
-    filename='whitescreen.png'
+    filename='img/whitescreen.png'
     cv2.imwrite(filename, f)
     cv2.imshow('f',f)
     cv2.waitKey(0)

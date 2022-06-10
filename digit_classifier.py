@@ -72,11 +72,11 @@ def predict(pth):
     dst=cv2.morphologyEx(dst, cv2.MORPH_OPEN, kernel)
     dst=cv2.erode(dst, kernel, iterations=5)
     dst=cv2.resize(dst, (28,28))
-    filename='output.png'
+    filename='img/output.png'
     cv2.imwrite(filename, dst)
     img_transformer=transforms.Compose([transforms.Grayscale(),transforms.Resize((28, 28)), transforms.ToTensor(), transforms.Normalize(mean=[(0.5)], std=[(0.5)])])
                 
-    dst=Image.open('output.png')
+    dst=Image.open('img/output.png')
     input_tensor= img_transformer(dst)
     input_batch=input_tensor.unsqueeze(0)
     input_batch=input_batch.to(device)
@@ -96,10 +96,11 @@ def predict(pth):
     plt.tight_layout()
     plt.show()
 
-parser = argparse.ArgumentParser(description='DIGIT CLASSIFIER ')
-parser.add_argument('data', type=str, help='Input path of the image')
-args = parser.parse_args()
-data = args.data
-predict(data)
+predict('img/2.jpg')
+# parser = argparse.ArgumentParser(description='DIGIT CLASSIFIER ')
+# parser.add_argument('data', type=str, help='Input path of the image')
+# args = parser.parse_args()
+# data = args.data
+# predict(data)
 
 
