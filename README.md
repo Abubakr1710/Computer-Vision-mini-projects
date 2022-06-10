@@ -16,7 +16,7 @@ If you did not install this packages,  please install it first
 ******************************
 ## Project 2. Meme Generator
 ******************************
-![image description](img\meme.png)
+![meme generator](img/meme.png)
 ******************************
 ## Project 3. QR Code Reader
 ******************************
