@@ -21,7 +21,14 @@ If you did not install this packages,  please install it first
 ## Project 3. QR Code Reader
 ******************************
 ![QR COde Reader](img/rect_qr.png)
-dDGGFFGOUGFUGFOUgfoUGFOH 
 ******************************
-dDGGFFGOUGFUGFOUgfoUGFOH    
+## Project 4. Background changer
+******************************
+![Background](img\whitescreen.png)
+******************************
+## Project 5. Handwritten digit classifier
+******************************
+![Digit](img\Digit.png)
+******************************
+
 
