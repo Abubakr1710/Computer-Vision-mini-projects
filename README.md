@@ -22,4 +22,5 @@ If you did not install this packages,  please install it first
 ******************************
 ![QR COde Reader](img/rect_qr.png)
 ******************************
+dDGGFFGOUGFUGFOUgfoUGFOH    
 
