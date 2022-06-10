@@ -49,31 +49,6 @@ state_dict=torch.load('checkpoint.pth')
 model.load_state_dict(state_dict)
 print(model.load_state_dict(state_dict))
 
-
-
-def sort_contours(cnts, method="left-to-right"):
-    # initialize the reverse flag and sort index
-    reverse = False
-    i = 0
-
-    # handle if we need to sort in reverse
-    if method == "right-to-left" or method == "bottom-to-top":
-        reverse = True
-
-    # handle if we are sorting against the y-coordinate rather than
-    # the x-coordinate of the bounding box
-    if method == "top-to-bottom" or method == "bottom-to-top":
-        i = 1
-
-    # construct the list of bounding boxes and sort them from top to
-    # bottom
-    boundingBoxes = [cv2.boundingRect(c) for c in cnts]
-    (cnts, boundingBoxes) = zip(*sorted(zip(cnts, boundingBoxes),
-                                        key=lambda b: b[1][i], reverse=reverse))
-    # return the list of sorted contours and bounding boxes
-    return (cnts, boundingBoxes)
-
-
 def predict(pth):
     img=cv2.imread(pth)
     rgb_img=img.copy()
@@ -82,18 +57,16 @@ def predict(pth):
     gray_img=cv2.cvtColor(gray_img, cv2.COLOR_RGB2GRAY)
     retval ,threshold=cv2.threshold(gray_img, 0, 255, cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
     contours, hierarchy = cv2.findContours(threshold, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    copy_img=gray_img.copy()
-    drawing=cv2.drawContours(copy_img, contours, -1, (0,255,0),7)
-    plt.figure(figsize=(15,10))
-    
     #print(len(contours))
-    # sorted_contours=sorted(contours, key=cv2.contourArea, reverse=True)
-    # copy_img=rgb_img.copy()
-    # clean_contours=sorted_contours[0:4]
-    # x,y,w,h = cv2.boundingRect(clean_contours[3], method)
-    # rect=cv2.rectangle(copy_img, (x,y), (x+w, y+h),(0,255,0), 2)
+    sorted_contours=sorted(contours, key=cv2.contourArea, reverse=True)
+    clean_contours=sorted_contours[0:4]
+    clean_contours = sorted(clean_contours, key=lambda x: cv2.boundingRect(x)[0])
+    for c in clean_contours:
+        x,y,w,h = cv2.boundingRect(c)
+        rect = cv2.rectangle(rgb_img, (x,y), (x+w, y+h), (0,255,0), 2)
+        
     
-    plt.imshow(drawing, cmap='gray')
+    plt.imshow(rect)
     plt.show()
 
 predict('img/2022.jpg')
