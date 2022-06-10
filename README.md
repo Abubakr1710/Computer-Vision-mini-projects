@@ -12,11 +12,11 @@ If you did not install this packages,  please install it first
 
 ## Project 1. Image anotation
 ******************************
-<img src="annotated.png" width="128"/>
+![image description](annotated.png)
 ******************************
 ## Project 2. Meme Generator
 ******************************
-<img src="C:\Users\Abubakr\Documents\GitHub\Computer-Vision-mini-projects\img\meme.png" width="128"/>
+![image description](C:\Users\Abubakr\Documents\GitHub\Computer-Vision-mini-projects\img\meme.png)
 ******************************
 ## Project 3. QR Code Reader
 ******************************
