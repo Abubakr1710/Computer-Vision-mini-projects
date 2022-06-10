@@ -16,7 +16,7 @@ If you did not install this packages,  please install it first
 ******************************
 ## Project 2. Meme Generator
 ******************************
-![image description](C:\Users\Abubakr\Documents\GitHub\Computer-Vision-mini-projects\img\meme.png)
+![image description](img\meme.png)
 ******************************
 ## Project 3. QR Code Reader
 ******************************
