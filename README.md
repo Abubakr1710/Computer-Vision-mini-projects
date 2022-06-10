@@ -2,7 +2,7 @@
 This repository contains mini projects of Computer Vision classes in Epicode(Strive School)
 
 ## Needed packages:
-If you did not install this packages,  please install it first
+If you did not install this packages yet, please install it first
 
 * <a href="https://anaconda.org/anaconda/numpy">numpy</a>
 * <a href="https://anaconda.org/conda-forge/matplotlib">matplotlib</a>
