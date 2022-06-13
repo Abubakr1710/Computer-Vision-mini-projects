@@ -96,11 +96,10 @@ def predict(pth):
     plt.tight_layout()
     plt.show()
 
-
+predict('img/digit04.png')
 # parser = argparse.ArgumentParser(description='DIGIT CLASSIFIER ')
 # parser.add_argument('data', type=str, help='Input path of the image')
 # args = parser.parse_args()
 # data = args.data
 # predict(data)
-
 
